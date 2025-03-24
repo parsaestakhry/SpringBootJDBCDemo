@@ -1,4 +1,4 @@
-package com.parsa.springbootjdbcdemo;
+package com.parsa.springbootjdbcdemo.model;
 
 
 import org.springframework.stereotype.Component;

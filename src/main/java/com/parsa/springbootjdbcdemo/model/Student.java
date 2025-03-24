@@ -1,11 +1,14 @@
 package com.parsa.springbootjdbcdemo.model;
 
 
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 
 //letting spring framework to deal with the configuration
 @Component
+//dealing with multiple students
+@Scope("prototype")
 public class Student {
     private int rollNo;
     private String name;

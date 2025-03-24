@@ -1,6 +1,7 @@
 package com.parsa.springbootjdbcdemo;
 
 import com.parsa.springbootjdbcdemo.model.Student;
+import com.parsa.springbootjdbcdemo.service.StudentService;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -15,6 +16,10 @@ public class SpringBootJdbcDemoApplication {
         student.setRollNo(101);
         student.setMarks(53);
         student.setName("max");
+
+
+        StudentService service = context.getBean(StudentService.class);
+        service.addStudent(student);
     }
 
 }

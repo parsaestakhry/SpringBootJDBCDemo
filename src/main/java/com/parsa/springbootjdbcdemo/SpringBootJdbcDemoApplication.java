@@ -25,6 +25,7 @@ public class SpringBootJdbcDemoApplication {
 
 
         List<Student> studentList = service.getStudents();
+        System.out.println(studentList);
     }
 
 }

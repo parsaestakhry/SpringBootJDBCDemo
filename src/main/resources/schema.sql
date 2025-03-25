@@ -3,4 +3,4 @@ CREATE TABLE IF NOT EXISTS student (
     name varchar(50),
     marks INT
 
-)
+);
